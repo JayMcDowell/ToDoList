@@ -1,0 +1,11 @@
+<h1>All Tasks!!</h1>
+<ul>
+    <%- @tasks.each do |f| %>
+    <input type="checkbox" value="soccer"/>
+    <%= f.title %>
+</br>
+
+    <%- end %>
+</ul>
+
+<%= link_to "Write Task", new_task_path %>
